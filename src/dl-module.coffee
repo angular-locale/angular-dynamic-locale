@@ -6,4 +6,4 @@
 
 ###
 
-dl = angular.module 'dl', ['ng', 'cc']
+dl = angular.module 'dl', ['cc']
