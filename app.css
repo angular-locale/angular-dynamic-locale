@@ -1,0 +1,15 @@
+/**
+ * Angular-Dynamic-Locale v0.1.0
+ *
+ * @author: Carey Hinoki <carey.hinoki@gmail.com> (http://careyhinoki.me/)
+ * @date: 2014-02-23
+ */
+
+body,
+h1,
+h2 {
+  font-family: Lato, sans-serif;
+}
+table {
+  width: 100%;
+}
