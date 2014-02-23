@@ -1,0 +1,12 @@
+{
+  "name": "angular-dynamic-locale",
+  "version": "0.1.0",
+  "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://careyhinoki.me/)",
+  "devDependencies": {
+    "angular":               "1.2.13",
+    "angular-currency-code": "git@github.com:angular-locale/angular-currency-code.git#master",
+    "angular-i18n":          "~1.2.13",
+    "foundation":            "~5.1.1",
+    "jquery":                "2.0.3"
+  }
+}
