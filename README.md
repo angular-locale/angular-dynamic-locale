@@ -1,8 +1,8 @@
 # Angular Dynamic Locale
 > Enables dynamic multi-locale support for currency, date, and pluralization*.
 
-- AngularJS documentation is at http://angularjs.org/
-- Angular Currency Code documentiation is at https://github.com/angular-locale/angular-currency-code
+- AngularJS documentation is at http://angularjs.org/.
+- Angular Currency Code documentiation is at https://github.com/angular-locale/angular-currency-code.
 
 ## Getting Started
 
