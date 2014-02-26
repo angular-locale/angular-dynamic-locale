@@ -66,6 +66,7 @@
         return $scope.international_values = results.slice(offset, offset + per_page);
       };
       $scope.cc_currency_symbol = ccCurrencySymbol;
+      $scope.date = new Date();
       $scope.goHome = function() {
         if ($window.location.hostname === 'localhost') {
           return '/';
