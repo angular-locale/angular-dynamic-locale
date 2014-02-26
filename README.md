@@ -2,7 +2,7 @@
 > Enables dynamic multi-locale support for currency, date, and pluralization*.
 
 - AngularJS documentation is at http://angularjs.org/.
-- Angular Currency Code documentiation is at https://github.com/angular-locale/angular-currency-code.
+- Angular Currency Code documentation is at https://github.com/angular-locale/angular-currency-code.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ Download the `angular-dynamic-locale.js` file or download it via [bower](http://
 }
 ```
 
-Add the currency code module to your application:
+Add the dynamic locale module to your application:
 
 ```javascript
 myApp = angular.module('myApp', ['dl']);
@@ -46,31 +46,31 @@ Render locale data:
 <!-- dump those currencies -->
 <ul>
   <!-- 12,38 € -->
-  <li><{{12.38 | dlCurrency: 'de'}}</li>
+  <li>{{12.38 | dlCurrency: 'de'}}</li>
 
   <!-- £12.38 -->
-  <li><{{12.38 | dlCurrency: 'en-gb'}}</li>
+  <li>{{12.38 | dlCurrency: 'en-gb'}}</li>
 
   <!-- $12.38 -->
-  <li><{{12.38 | dlCurrency: 'en-us'}}</li>
+  <li>{{12.38 | dlCurrency: 'en-us'}}</li>
 
   <!-- 12,38 $ -->
-  <li><{{12.38 | dlCurrency: 'fr-ca'}}</li>
+  <li>{{12.38 | dlCurrency: 'fr-ca'}}</li>
 </ul>
 
 <!-- dump those dates -->
 <ul>
   <!-- 23.05.1985 -->
-  <li><{{'1985-05-23' | dlDate: 'de'}}</li>
+  <li>{{'1985-05-23' | dlDate: 'de'}}</li>
 
   <!-- 23 May 1985 -->
-  <li><{{'1985-05-23' | dlDate: 'en-gb'}}</li>
+  <li>{{'1985-05-23' | dlDate: 'en-gb'}}</li>
 
   <!-- May 23, 1985 -->
-  <li><{{'1985-05-23' | dlDate: 'en-us'}}</li>
+  <li>{{'1985-05-23' | dlDate: 'en-us'}}</li>
 
   <!-- 1985-05-23 -->
-  <li><{{'1985-05-23' | dlDate: 'fr-ca'}}</li>
+  <li>{{'1985-05-23' | dlDate: 'fr-ca'}}</li>
 </ul>
 ```
 
@@ -82,13 +82,13 @@ Type: `String` Default: `en-us`
 
 Allows you to set what locale your application will default to.
 
-setLocales
+#### setLocales
 
 Type: `Array` Default: `['en-us']`
 
 Allows you to set which locales you want to have access to in your filters.
 
-setCurrencyMap
+#### setCurrencyMap
 
 Type: `Object` Default `{'USD': 'en-us'}`
 
@@ -98,7 +98,7 @@ An example would be `{'CAD': 'en-ca'}`. If you wanted Canadian dollars to defaul
 
 ## dlCurrency
 
-Leverages the angular currency filter to display locale specific currecies. AngularJS currency documentation can be found http://docs.angularjs.org/api/ng/filter/currency.
+Leverages the angular currency filter to display locale specific currencies. AngularJS currency documentation can be found http://docs.angularjs.org/api/ng/filter/currency.
 
 ```javascript
 // $12.38
