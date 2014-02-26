@@ -38,6 +38,7 @@ myApp.config([
     ]);
   }
 ]);
+```
 
 ```html
 <!-- dump those currencies -->
