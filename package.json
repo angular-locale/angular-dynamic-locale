@@ -1,6 +1,6 @@
 {
   "name": "angular-dynamic-locale",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://careyhinoki.me/)",
   "devDependencies": {
     "grunt":                 "~0.4.2",
