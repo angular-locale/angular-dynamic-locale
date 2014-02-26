@@ -24,6 +24,7 @@ myApp = angular.module('myApp', ['dl']);
 
 ## Basic Usage
 
+Configure the dlProviderProvider for your app to define expected locales:
 ```javascript
 myApp.config([
   'dlProviderProvider',
@@ -40,6 +41,7 @@ myApp.config([
 ]);
 ```
 
+Render locale data:
 ```html
 <!-- dump those currencies -->
 <ul>
