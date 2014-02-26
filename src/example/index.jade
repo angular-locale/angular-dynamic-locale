@@ -58,12 +58,14 @@ body(ng-controller="AngularDynamicLocaleController")
           table
             thead
               tr
-                th(width="150px") Locale
-                th Amount
+                th(width="33%") Locale
+                th(width="33%") Date
+                th(width="33%") Amount
 
             tbody
               tr(ng-repeat="value in locale_values")
                 td {{value.locale | uppercase}}
+                td {{date | dlDate: value.locale}}
                 //- dlCurrency takes locale or currency code
                 td {{value.amount | dlCurrency: value.locale}}
 
@@ -95,15 +97,32 @@ body(ng-controller="AngularDynamicLocaleController")
           table
             thead
               tr
-                th(width="150px") Currency Code
-                th Symbol
-                th Amount
+                th(width="33%") Currency Code
+                th(width="33%") Date
+                th(width="33%") Amount
 
             tbody
               tr(ng-repeat="value in international_values")
                 td {{value.currency_code}}
-                td {{cc_currency_symbol[value.currency_code]}}
+                td {{'1985-05-23' | dlDate: value.locale: 'yyyy-MM-dd'}}
+                //- td {{cc_currency_symbol[value.currency_code]}}
                 td {{value.amount | currency: cc_currency_symbol[value.currency_code]}}
+
+      .row
+        .columns
+          hr
+
+      .row
+        .columns
+          h2 Currency Symbols
+
+          ul.inline-list
+            li(ng-repeat="(key, value) in cc_currency_symbol")
+              figure
+                span.symbol {{value}}
+
+                figcaption
+                  p {{key}}
 
   script(src="vendor.js")
   script(src="angular-dynamic-locale.js")

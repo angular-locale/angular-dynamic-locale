@@ -89,6 +89,7 @@ app.controller 'AngularDynamicLocaleController', [
     # other
 
     $scope.cc_currency_symbol = ccCurrencySymbol
+    $scope.date = new Date()
 
     $scope.goHome = ->
       if $window.location.hostname is 'localhost' then '/' else '/angular-dynamic-locale'
