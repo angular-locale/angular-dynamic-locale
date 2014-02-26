@@ -4,6 +4,7 @@ module.exports = (grunt) ->
       files: [
         'tmp/vendor.css': [
           'vendor/bower/foundation/css/foundation.css'
+          'vendor/bower/font-awesome/css/font-awesome.css'
         ]
 
         'tmp/vendor.js': [

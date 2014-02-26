@@ -31,6 +31,7 @@ module.exports = (grunt) ->
     'jade:dev'
     'stylus:dev'
     'concat:dev'
+    'copy:dev'
     'chalkboard:src'
   ]
 
